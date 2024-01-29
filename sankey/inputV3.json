@@ -1,0 +1,231 @@
+{
+"data": [
+{
+"type": "sankey",
+"domain": {
+"x": [
+0,
+1
+],
+"y": [
+0,
+1
+]
+},
+"orientation": "h",
+"valueformat": ".0f",
+"valuesuffix": "TWh",
+"node": {
+"pad": 15,
+"thickness": 15,
+"line": {
+"color": "black",
+"width": 0.5
+},
+"label": [
+"Vegetation damage (0)",
+"Vegetation dieback (1)",
+"Vegetation amount (gain)(3)",
+"Vegetation amount (loss)(4)",
+"Flooding (5)",
+"Pathogens (6)",
+"Fire (7)"
+],
+"color": [
+"rgba(126, 175, 74, 0.8)",
+"rgba(203, 167, 94, 0.8)",
+"rgba(144, 228, 95, 0.8)",
+"rgba(243, 113, 61, 0.8)",
+"rgba(39, 59, 173, 0.8)",
+"rgba(215, 197, 59, 0.8)",
+"rgba(249, 149, 10, 0.8)",
+"rgba(122, 10, 50, 0.8)",
+"rgba(50, 66, 142, 0.8)"
+]
+},
+"link": {
+"source": [
+1,
+1,
+1,
+0,
+0,
+2,
+2,
+3,
+3
+],
+"target": [
+4,
+5,
+6,
+4,
+6,
+5,
+6,
+5,
+4
+],
+"value": [
+20.0,
+20.0,
+20.0,
+20.0,
+20.0,
+20.0,
+20.0,
+20.0,
+20.0
+],
+"color": [
+"rgba(0,0,96,0.2)",
+"rgba(0,0,96,0.2)",
+"rgba(0,0,96,0.2)",
+"rgba(0,0,96,0.2)",
+"rgba(0,0,96,0.2)"
+],
+"label": [
+"",
+"",
+"",
+"",
+"stream 1",
+""
+]
+}
+}
+],
+"layout": {
+"title": {
+"text": "Impacts Pressures"
+},
+"width": 1118,
+"height": 772,
+"font": {
+"size": 10
+},
+"updatemenus": [
+{
+"y": 1,
+"buttons": [
+{
+"label": "Light",
+"method": "relayout",
+"args": [
+"paper_bgcolor",
+"white"
+]
+},
+{
+"label": "Dark",
+"method": "relayout",
+"args": [
+"paper_bgcolor",
+"black"
+]
+}
+]
+},
+{
+"y": 0.9,
+"buttons": [
+{
+"label": "Thick",
+"method": "restyle",
+"args": [
+"node.thickness",
+15
+]
+},
+{
+"label": "Thin",
+"method": "restyle",
+"args": [
+"node.thickness",
+8
+]
+}
+]
+},
+{
+"y": 0.8,
+"buttons": [
+{
+"label": "Small gap",
+"method": "restyle",
+"args": [
+"node.pad",
+15
+]
+},
+{
+"label": "Large gap",
+"method": "restyle",
+"args": [
+"node.pad",
+20
+]
+}
+]
+},
+{
+"y": 0.7,
+"buttons": [
+{
+"label": "Snap",
+"method": "restyle",
+"args": [
+"arrangement",
+"snap"
+]
+},
+{
+"label": "Perpendicular",
+"method": "restyle",
+"args": [
+"arrangement",
+"perpendicular"
+]
+},
+{
+"label": "Freeform",
+"method": "restyle",
+"args": [
+"arrangement",
+"freeform"
+]
+},
+{
+"label": "Fixed",
+"method": "restyle",
+"args": [
+"arrangement",
+"fixed"
+]
+}
+]
+},
+{
+"y": 0.6,
+"buttons": [
+{
+"label": "Horizontal",
+"method": "restyle",
+"args": [
+"orientation",
+"h"
+]
+},
+{
+"label": "Vertical",
+"method": "restyle",
+"args": [
+"orientation",
+"v"
+]
+}
+]
+}
+]
+}
+}
