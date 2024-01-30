@@ -51,7 +51,11 @@ def average_color(color1, color2):
 
 # Load the nodes and links from the CSV files
 nodes = csv_to_dict('nodes.csv')
+# Keep only label,color,customdata from the dict
+nodes = {k: nodes[k] for k in ('label','color','customdata')}
 links = csv_to_dict('links.csv')
+# Keep only source,target,value from the dict
+links = {k: links[k] for k in ('source','target','value')}
 
 ## Create a list of colors for the links by averaging the colors of the source and target nodes for each link.
 links['color'] = [
